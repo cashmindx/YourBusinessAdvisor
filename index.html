@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YourBusinessAdvisor</title>
+  <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+</head>
+<body>
+  <h1>Welcome to YourBusinessAdvisor</h1>
+  <p>Hi, I'm Charlie, your virtual business consultant. How can I assist you today?</p>
+  <div id="webchat"></div>
+  <script>
+    WebChat.default.init({
+      selector: "#webchat",
+      initPayload: "/greet",
+      customData: { language: "en" }, // You can add custom data here
+      socketUrl: "http://<your-backend-ip>:5005", <!-- Replace with your backend URL -->
+      title: "Charlie - Your Business Advisor",
+      subtitle: "How can I help you grow your business?",
+      inputTextFieldHint: "Type your message here...",
+      showFullScreenButton: true,
+      params: {
+        storage: "local"
+      }
+    });
+  </script>
+</body>
+</html>
