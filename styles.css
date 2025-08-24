@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -6,12 +7,28 @@ body {
   background-color: #f4f4f9;
 }
 
+header {
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+}
+
+header .logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
 h1 {
-  color: #333;
+  margin: 10px 0;
 }
 
 p {
-  color: #555;
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+main {
+  margin: 20px auto;
 }
 
 #webchat {
